@@ -1,0 +1,32 @@
+:root {
+    --fuente_primaria: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 20rem;
+}
+
+p {
+    font-family: var(--fuente_primaria);
+}
+
+ul {
+    display: block;
+}
+.nav_link {
+    font-family: var(--fuente_primaria);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.logo {
+    width: 10rem;
+    border-radius: 1rem;
+}
+
