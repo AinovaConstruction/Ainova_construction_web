@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primario': 'rgb(145, 28, 28)',
+                        'secundario': 'rgb(54, 54, 236)',
+                    },
+                    fontFamily: {
+                        'primaria': ["Montserrat", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,72 +30,79 @@
     <title>AINOVA</title>
 </head>
 
-<body>
-    <header>
-        <nav>
+<body class="font-primaria m-0 p-0 text-gray-800"> <header class="p-4 bg-gray-50 shadow-sm">
+        <nav class="flex items-center justify-between container mx-auto">
             <div>
                 <a href="index.html">
-                    <img class="logo" src="img/ainova_loco.webp" alt="Ainova constructora y operadra">
+                    <img class="w-40 rounded-2xl" src="img/ainova_loco.webp" alt="Ainova constructora y operadra">
                 </a>
             </div>
-            <ul>
-                <li><a class="nav_link" href="#">inicio</a></li>
-                <li><a class="nav_link" href="#">nosotros</a></li>
-                <li><a class="nav_link" href="#">proyectos</a></li>
-                <li><a class="nav_link" href="#">servicios</a></li>
-                <li><a class="nav_link" href="#">blog</a></li>
-                <li><a class="nav_link" href="#">talento</a></li>
-                <li><a class="nav_link" href="#">contacto</a></li>
+            
+            <ul class="block md:flex md:space-x-6 text-center md:text-left mt-4 md:mt-0">
+                <li><a class="nav_link font-primaria no-underline uppercase font-semibold text-gray-700 hover:text-primario transition" href="#">inicio</a></li>
+                <li><a class="nav_link font-primaria no-underline uppercase font-semibold text-gray-700 hover:text-primario transition" href="#">proyectos</a></li>
+                <li><a class="nav_link font-primaria no-underline uppercase font-semibold text-gray-700 hover:text-primario transition" href="#">servicios</a></li>
+                <!-- <li><a class="nav_link font-primaria no-underline uppercase font-semibold text-gray-700 hover:text-primario transition" href="#">talento</a></li> -->
+                <li><a class="nav_link font-primaria no-underline uppercase font-semibold text-gray-700 hover:text-primario transition" href="#">sobre notros</a></li>
             </ul>
         </nav>
-    </header> <!-- .header -->
-
-    <hr>
-    <main>
-        <img src="img/Proyectos/images.jpeg" alt="">
-        <h2> Construimos y transformamos tus espacios</h2>
-        <p>
+    </header> <hr class="border-gray-200">
+    <main class="container mx-auto p-4 py-8">
+        
+        <img src="img/Proyectos/images.jpeg" alt="" class="w-80 h-auto rounded-lg mb-6">
+        
+        <h2 class="text-3xl font-bold mb-4 text-primario"> Construimos y transformamos tus espacios</h2>
+        
+        <p class="font-primaria text-gray-700 mb-8 max-w-2xl">
             Hacemos realidad tus proyectos de construcción y remodelación,
             ya sea en tu hogar, departamento o negocio, con calidad, confianza
             y un acompañamiento cercano en cada etapa.
         </p>
 
-        <section>
-            <h3>Nuestros Servicios</h3>
-            <div>
-                <img src="img/Proyectos/nuestros_proyectos/img4.jpeg"
-                    alt="">
-                <p>Obra Residencial</p>
-            </div>
+        <section class="py-8">
+            <h3 class="text-2xl font-semibold mb-6">Nuestros Servicios</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+                    <img src="img/Proyectos/nuestros_proyectos/img4.jpeg"
+                        alt="" class="w-full h-48 object-cover rounded-lg mb-3">
+                    <p class="font-primaria text-center font-medium">Obra Residencial</p>
+                </div>
 
-            <div>
-                <img src="https://www.alpha-hardin.com/wp-content/uploads/2026/03/AMAZON_CDMX_ALPHA_HARDIN_WORKPLACES_ARELYMEDINAQPHOTO_0O3A5421_HDR-scaled.jpg"" alt="">
-                <p>Espacios Comerciales</p>
-            </div>
+                <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+                    <img src="https://www.alpha-hardin.com/wp-content/uploads/2026/03/AMAZON_CDMX_ALPHA_HARDIN_WORKPLACES_ARELYMEDINAQPHOTO_0O3A5421_HDR-scaled.jpg" alt="" 
+                        class="w-full h-48 object-cover rounded-lg mb-3">
+                    <p class="font-primaria text-center font-medium">Espacios Comerciales</p>
+                </div>
 
-            <div>
-                <img src="img/Proyectos/remodelacion.jpeg" alt="">
-                <p>Remodelaciones</p>
-            </div>
+                <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+                    <img src="img/Proyectos/remodelacion.jpeg" alt=""
+                        class="w-full h-48 object-cover rounded-lg mb-3">
+                    <p class="font-primaria text-center font-medium">Remodelaciones</p>
+                </div>
 
-            <div>
-                <img src="img/Proyectos/mantenimiento.png" alt="">
-                <p>Obras de mantenimiento</p>
+                <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+                    <img src="img/Proyectos/mantenimiento.png" alt=""
+                        class="w-full h-48 object-cover rounded-lg mb-3">
+                    <p class="font-primaria text-center font-medium">Obras de mantenimiento</p>
+                </div>
             </div>
-        </section> <!-- .seccion servicios -->
-
-    </main> <!-- .main -->
-
-    <hr>
-    <footer>
-        <div>
-            <div>
-                <img class="logo" src="img/ainova_loco.webp" alt="">
+        </section> </main> <hr class="border-gray-200">
+    <footer class="bg-gray-100 py-10 mt-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center mb-6">
+                <img class="w-40 rounded-2xl mb-4" src="img/ainova_loco.webp" alt="">
+                
+                <a href="mailto:constructora.ainova@gmail.com" class="font-primaria text-secundario hover:underline">
+                    constructora.ainova@gmail.com
+                </a>
             </div>
-            <p>constructora.ainova@gmail.com</p>
+            <hr class="border-gray-300 mb-6 max-w-lg mx-auto">
+            <p class="font-primaria text-gray-500 text-sm uppercase tracking-wider">
+                &copy; 2026 ainova constructora y operadora. todos los derechos reservados.
+            </p>
         </div>
-        <hr>
-        <p>ainova constructora y operadora todos los derechos reservados</p>
     </footer>
 </body>
 
