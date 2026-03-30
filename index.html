@@ -40,33 +40,35 @@
 </head>
 
 <body class="font-primaria m-0 p-0 text-gray-800">
-    <header class="p-12 bg-[#25425b] shadow-sm">
+    <header class="p-8 md:p-12 bg-[#25425b] shadow-sm">
         <nav class="container mx-auto">
-            <ul
-                class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-52 text-center">
-                <li class="list-none">
-                    <a href="index.html">
-                        <img class="w-40 rounded-2xl" src="img/ainova_loco.webp" alt="Ainova constructora y operadra">
+            <ul class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 text-center">
+
+                <li class="list-none shrink-0"> <a href="index.html">
+                        <img class="w-32 md:w-40 min-w-[120px]" src="img/ainova_logo.webp"
+                            alt="Ainova constructora y operadra">
                     </a>
                 </li>
 
-                <li><a class="nav_link font-primaria no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
-                        href="#">Inicio</a></li>
-                <li><a class="nav_link font-primaria no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
-                        href="#">Proyectos</a></li>
-                <li><a class="nav_link font-primaria no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
-                        href="servicios.html">Servicios</a></li>
-                <li><a class="nav_link font-primaria no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
-                        href="#">Sobre nosotros</a></li>
+                <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                    <li><a class="nav_link no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
+                            href="#">Inicio</a></li>
+                    <li><a class="nav_link no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
+                            href="#">Proyectos</a></li>
+                    <li><a class="nav_link no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
+                            href="servicios.html">Servicios</a></li>
+                    <li><a class="nav_link no-underline font-montserrat uppercase text-gray-50 hover:text-primario transition"
+                            href="#">Sobre nosotros</a></li>
+                </div>
             </ul>
         </nav>
-        <br>
-        <br>
-        <br>
-        <p class="text-center font-montserrat text-gray-50 mb-8 max-w-4xl uppercase mx-auto text-centergit">
-            Transformamos espacios en proyectos que perduran, donde la visión se convierte en resultados reales y la
-            confianza se construye en cada etapa
-        </p>
+
+        <div class="mt-12 md:mt-16">
+            <p class="text-center font-montserrat text-gray-50 max-w-4xl uppercase mx-auto">
+                Transformamos espacios en proyectos que perduran, donde la visión se convierte en resultados reales y la
+                confianza se construye en cada etapa
+            </p>
+        </div>
     </header>
     <hr class="border-gray-200">
 
@@ -118,7 +120,7 @@
     <footer class="bg-gray-100 py-10 mt-10">
         <div class="container mx-auto px-4 text-center">
             <div class="flex flex-col items-center mb-6">
-                <img class="w-40 rounded-2xl mb-4" src="img/ainova_loco.webp" alt="">
+                <img class="w-40 mb-4" src="img/ainova_logo_grices.webp" alt="">
 
                 <a href="mailto:constructora.ainova@gmail.com" class="font-primaria text-secundario hover:underline">
                     constructora.ainova@gmail.com
